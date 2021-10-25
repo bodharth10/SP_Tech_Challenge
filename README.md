@@ -1,4 +1,4 @@
-# Coding Challenge
+# SP_Tech_Challenge
   Write a ruby script that:
 > a)Receives a log as argument (webserver.log is provided) e.g.: ./parser.rb webserver.log.
 
@@ -75,8 +75,3 @@ The LogFileParser class can be improved for handling multiple file format curren
 
 
 
-
-
-
-
-# SP_Tech_Challenge
