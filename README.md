@@ -63,15 +63,14 @@ $ rspec spec/lib/*
 
 ### Code:
 
-The script is developed by following basic ruby OOP.  I have created 2 classes. LogFileParser ie log_file_parser.rb is created as the main class and for now, it has the responsibility to validate a log. and to parse only a .log file. ReportGenerator class has been assigned responsibility for generating the report for logs.
+The script is developed by following basic ruby OOP.  I have created 2 classes. LogFileParser ie log_file_parser.rb is created as the main class and for now, it has the responsibility to validate a log file and to parse only a .log file. ReportGenerator class has been assigned responsibility for generating the report for logs.
 
 As far as log_file_parser is concerned, the "parse_file" method is implemented in which I have avoided using each loop with readlines  and used while loop for improving performance ie less use of memory because it avoids the loading of logs in one go which causes more usage of memory and exerts pressure on GC(garbage collector). And then the file is closed using the file. close after the parsing is finished to avoid memory leakage.
 
-All the code is implemented by following the Test Driven Development approach(TDD) using RSpec . 
+All the code is implemented by following the Test Driven Development approach(TDD) using RSpec. 
 
 ### Scope for improvements:
 
-The LogFileParser class can be improved for handling multiple file format currently not done implementation and multiple file formats can handled by extending it by creating classes for respective file extensions .
-
+The LogFileParser class can be improved for handling multiple file-formats currently not done implementation and multiple file-formats can be handled by extending it by creating classes for respective file extensions.
 
 
